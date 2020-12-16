@@ -1,0 +1,11 @@
+platform :ios, '14.0'
+use_frameworks!
+
+def app_pods
+    pod 'KeychainAccess'
+end
+
+target "MyApp" do
+    project "MyApp/MyApp.project"
+    app_pods
+end
